@@ -13,13 +13,10 @@ body {
 }
 
 main {
-    background-image: url(../imagens/background.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: rgb(20, 20, 20) url(../imagens/background.jpg) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(182, 240, 221);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +33,8 @@ main {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(1px);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
 
 #container-esqueceu, #container-criar {
@@ -49,6 +48,8 @@ main {
     justify-content: center;
     backdrop-filter: blur(1px);
     padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+
 }
 
 h1 {
