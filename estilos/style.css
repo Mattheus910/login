@@ -83,7 +83,8 @@ input {
 .opcoes {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 300px;
+    margin-left: 20px;
 
 }
  
@@ -94,10 +95,16 @@ input {
 a {
     text-decoration: none;
     color: black;
+    
 }
 
-a:hover, .botao:hover {
-    font-size: 1.1em;
+a:hover {
+    text-decoration: underline;
+}
+
+.botao:hover {
+    background-color: rgb(201, 201, 201);
+    border: 1px solid;
 }
 
 
