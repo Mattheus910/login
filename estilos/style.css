@@ -28,7 +28,7 @@ main {
 
 #container-login {
     background-color: rgba(252, 247, 247, 0.651);
-    width: 400px;
+    width: 350px;
     height: 500px;
     border-radius: 50px;
     display: flex;
@@ -41,7 +41,7 @@ main {
 
 #container-esqueceu, #container-criar {
     background-color: rgba(252, 247, 247, 0.651);
-    width: 400px;
+    width: 350px;
     height: 500px;
     border-radius: 50px;
     display: none;
