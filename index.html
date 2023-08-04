@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- Tela de login -->
+        <div id="container-login">
+
+
+            <div class="imagem">
+
+                <img src="imagens/usuario-de-perfil.png" alt="imagem de perfil">
+
+            </div>
+
+          <form action="#" method="post" autocomplete="on">
+
+            <div class="email">
+                <label for="iemail"> </label> <br>
+                <input type="email" name="email" id="iemail" required autocomplete="email" size="30" placeholder="Email">
+            </div>
+
+            <div class="senha">
+                <label for="isenha"> </label> <br>
+                <input type="password" name="senha" id="isenha" required autocomplete="current-password" size="30" placeholder="Senha">
+            </div>
+
+            <div>
+                <input class="botao" type="submit" value="Entrar">
+            </div>
+
+            <div class="opcoes">
+                <a href="#" onclick="exibirContainerEsqueceu()" type="button">Esqueceu a senha ?</a>
+                <a href="#" onclick="exibirContainerCriar()" type="button">Criar conta</a>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- Tela de mudar senha -->
+        <div id="container-esqueceu">
+
+            <div>
+                <h1>Recuperação de senha</h1>
+                <p>Para recuperar a senha, informe seu endereço de email que nós enviaremos um link para a alteração da senha.</p>
+            </div>
+
+            <form action="#" method="post" autocomplete="on">
+
+                <div>
+                    <input type="email" name="rec-email" id="rec-iemail" placeholder="Email" autocomplete="email" size="30">
+                </div>
+
+                <div>
+                    <input class="botao" type="submit" value="Voltar">
+                    <input class="botao" type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Tela de criar conta -->
+        <div id="container-criar">
+
+            <div>
+                <h1>Criar Conta</h1>
+            </div>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="icriar-email"></label>
+                    <input type="email" name="criar-email" id="icriar-email" placeholder="Email" size="30">
+                </div>
+
+                <div>
+                    <label for="icriar-senha"></label>
+                    <input type="password" name="criar-senha" id="icriar-senha" placeholder="Senha" size="30">
+                </div>
+
+                <div>
+                    <label for="irep-senha"></label>
+                    <input type="password" name="rep-senha" id="irep-senha" placeholder="Repetir senha" size="30">
+                </div>
+
+                <div>
+                    <input class="botao" type="submit" value="Voltar">
+                    <input class="botao" type="submit" value="Criar">
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <!-- Script para alteração de telas -->
+    <script>
+        const containerLogin = document.getElementById("container-login");
+        const containerEsqueceu = document.getElementById("container-esqueceu");
+        const containerCriar = document.getElementById("container-criar");
+      
+        function exibirContainerLogin() {
+          containerLogin.style.display = "flex";
+          containerEsqueceu.style.display = "none";
+          containerCriar.style.display = "none";
+        }
+      
+        function exibirContainerEsqueceu() {
+          containerLogin.style.display = "none";
+          containerEsqueceu.style.display = "flex";
+          containerCriar.style.display = "none";
+        }
+      
+        function exibirContainerCriar() {
+          containerLogin.style.display = "none";
+          containerEsqueceu.style.display = "none";
+          containerCriar.style.display = "flex";
+        }
+      </script>
+      
+
+</body>
+</html>
